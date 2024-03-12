@@ -1,0 +1,42 @@
+temat: dziedziczenie w c++
+
+#include <iostream>
+using namespace std;
+
+class Pojazdy {
+private:
+    string name;
+public:
+    Pojazdy(string n) {
+        this->name = n;
+    }
+    void prezentacjaPojazdu() {
+        cout << "Prezentacja pojazdu: " << this->name << endl;
+    }
+};
+
+class Samochody : public Pojazdy{           <-DZIEDZICZENIE TU
+private:
+    string marka;
+    string nazwa;
+public:
+    Samochody(string m, string n):Pojazdy(n) {
+        this->marka = m;
+        this->nazwa = n;
+    }
+    void prezentacjaSamochodu() {
+        cout << "Prezentacja samochodu: " << this->marka << endl;
+        cout << "Nazwa pojazdu: " << this-> nazwa << endl;
+    }
+};
+
+int main()
+{
+    Samochody vw = Samochody("Volkswagen", "Passat 1.9TDI");
+    vw.prezentacjaPojazdu();
+    vw.prezentacjaSamochodu();
+    return EXIT_SUCCESS;
+}
+
+
+utworz apk w c++ na konsole, apk dziedziczy w klasie krokodyl, konstruktor, metody, właściwości z klasy Gady. zaprezentuj 3 rózne odmiany krokodyli, dowlona interpretacja
