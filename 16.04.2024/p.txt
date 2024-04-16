@@ -1,0 +1,3 @@
+what the sigma
+
+Utwórz symulacje gry rpg wktórej użytkownik może tworzyć postacie (klasy postaci). Każda klasa postaci powinna dziedziczyć postac i zawierać unikaln ewłaściwości oraz metody umożliwiające walkę i uzywanie umiejętności
