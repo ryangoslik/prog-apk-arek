@@ -1,3 +1,8 @@
 what the sigma
 
 Utwórz symulacje gry rpg wktórej użytkownik może tworzyć postacie (klasy postaci). Każda klasa postaci powinna dziedziczyć postac i zawierać unikaln ewłaściwości oraz metody umożliwiające walkę i uzywanie umiejętności
+
+
+zad dom
+
+stworz prog do obslugi sklepu internetowego , w ktorym uzytkownik moze dodawac  rozne typy produktow np ksiazka, elektonika, odziez. kazdy produkt powinen byc reprezentowany przez odpwoiedznia klase po klasie kulka. zaimplementuj metody wirtualne takie jak obliczcene() i opis(), klasy ktore ulatwiaja zarzadzanie koszykiem zakupow.
