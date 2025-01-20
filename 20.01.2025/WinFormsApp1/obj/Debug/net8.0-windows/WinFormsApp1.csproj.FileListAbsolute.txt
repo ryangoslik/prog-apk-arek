@@ -1,0 +1,10 @@
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form2.resources
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form3.resources
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form4.resources
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Programista\Desktop\3CT\kab3ct\prog-apk-arek\20.01.2025\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
