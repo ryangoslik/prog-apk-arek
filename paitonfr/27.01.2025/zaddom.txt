@@ -1,0 +1,7 @@
+nauczyc si eteori, roznice miedzy tuplo, slownikiem, zbiorem i lista, czym jest list comprehension
+
+zaddom:
+napisz apk na konsole, ktora za pomoca input pobiera parametry do wyznaczania dlugosci bokow abc trojkata ze wzoru Herona. Dane pobierz do Herona z 
+A(listy)
+B(tupli)
+C(slownika)
