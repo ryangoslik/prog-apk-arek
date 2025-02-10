@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pojemnik">
+    <fieldset>
+        <legend>Chat to chopie</legend>
+        <section class="chat">
+            <div id="odpowiedz"></div>
+            <input type="text" id="mychatChopie"><div class="butony"><button id = "przycisk">Wyslij tekst</button>
+            <button id = "przycisk2">Angel Von</button>
+            <button id = "przycisk3">Evil Von</button>
+            <button id = "przycisk4">Im in bed with destroy lonely yeah</button>
+        </div>
+        </section>
+    </div>
+
+    </fieldset>
+    <script>
+
+        let odpowiedz = document.getElementById("odpowiedz")
+        let mychatChopie = document.getElementById("mychatChopie")
+        let przycisk = document.getElementById("przycisk")
+        let przycisk2 = document.getElementById("przycisk2")
+        let przycisk3 = document.getElementById("przycisk3")
+        let przycisk4 = document.getElementById("przycisk4")
+
+        przycisk.addEventListener("click", function(){
+            let pobierzDane = mychatChopie.value;
+            odpowiedz.innerHTML += `
+            <p>
+                <i>${pobierzDane}
+            </p>
+            `
+        })
+
+        przycisk2.addEventListener("click", function(){
+            let pobierzDane = mychatChopie.value;
+            odpowiedz.innerHTML += `
+            <p>
+                <img src="https://i.pinimg.com/736x/4f/1a/27/4f1a2737538782ded7313584070387b5.jpg">
+            </p>
+            `
+        })
+        przycisk3.addEventListener("click", function(){
+            let pobierzDane = mychatChopie.value;
+            odpowiedz.innerHTML += `
+            <p>
+                <img src="https://i.ytimg.com/vi/8OXlDMNRu_Q/hqdefault.jpg">
+            </p>
+            `
+        })
+        przycisk4.addEventListener("click", function(){
+            let pobierzDane = mychatChopie.value;
+            odpowiedz.innerHTML += `
+            <p>
+                <img src="https://pbs.twimg.com/media/GGVzZLRasAAeBB0.jpg">
+            </p>
+            `
+        })
+
+    </script>
+</body>
+</html>
