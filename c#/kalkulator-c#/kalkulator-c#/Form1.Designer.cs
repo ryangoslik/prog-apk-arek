@@ -46,6 +46,8 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -56,7 +58,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(574, 100);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // button0
             // 
@@ -215,9 +217,9 @@
             // button15
             // 
             this.button15.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button15.Location = new System.Drawing.Point(1, 469);
+            this.button15.Location = new System.Drawing.Point(291, 469);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(574, 58);
+            this.button15.Size = new System.Drawing.Size(284, 58);
             this.button15.TabIndex = 16;
             this.button15.Text = "=";
             this.button15.UseVisualStyleBackColor = true;
@@ -245,11 +247,35 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button17.Location = new System.Drawing.Point(1, 469);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(139, 58);
+            this.button17.TabIndex = 19;
+            this.button17.Text = "Pow";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button18.Location = new System.Drawing.Point(146, 469);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(139, 58);
+            this.button18.TabIndex = 20;
+            this.button18.Text = "Pier";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 682);
+            this.Controls.Add(this.button18);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button15);
@@ -296,6 +322,8 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
     }
 }
 
