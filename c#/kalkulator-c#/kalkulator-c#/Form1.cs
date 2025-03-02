@@ -34,7 +34,7 @@ namespace kalkulator_c_
 
         private void button0_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "0";
+            textBox1.Text += "7";
         }
 
         private void button1_Click(object sender, EventArgs e)

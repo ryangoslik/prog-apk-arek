@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reddit+Mono:wght@200..900&family=Roboto:wght@100;300&family=Uncial+Antiqua&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+12&family=Jacquard+24&family=Reddit+Mono:wght@200..900&family=Roboto:wght@100;300&family=Uncial+Antiqua&family=Workbench&display=swap');
+
+
+body{
+    width: 100vw;
+    margin: 0;
+    background-color: black;
+    font-size: x-large;
+    border: none;
+}
+#chatbox { width: 400px; min-height: 400px;  height: auto;}
+
+#messages { list-style: none; padding: 0; }
+
+#messages li { padding: 5px; }
+
+.s123{
+    color: rgb(203, 0, 0);
+    display: flex;
+    font-family: Workbench;
+    justify-content: center;
+    margin-top: 2.5vh;
+    border: 1px solid grey;
+    margin-left: 40%;
+    width: 20%;
+}
+
+.bottom{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+.bottom input{
+    background-color: black;
+    color: rgb(203, 0, 0);
+   
+    font-family: Workbench;
+}
+.bottom button{
+    background-color: black;
+    color: rgb(203, 0, 0);
+    font-family: Workbench;
+    transition-duration: 222ms;
+}
+.bottom button:hover{
+    background-color: rgb(203, 0, 0);
+    color: black;
+    border: 2px solid rgb(203, 0, 0);
+}
+h1{
+    font-family: Workbench;
+    color: rgb(203, 0, 0);
+    text-align: center;
+    font-size: 2.2rem;
+}
+.line{text-decoration-line: line-through; }
+.foot{
+    font-family: Workbench;
+    color: rgb(203, 0, 0);
+    font-size: medium;
+    margin-top: 5vh;
+    text-align: center;
+}
+.timer {
+    font-size: 1.5rem;
+    color: rgb(203, 0, 0);
+    font-family: Workbench;
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+}
