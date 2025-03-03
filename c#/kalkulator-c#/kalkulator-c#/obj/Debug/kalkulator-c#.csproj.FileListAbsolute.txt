@@ -18,3 +18,13 @@ C:\Users\Laptop\Desktop\Materiały\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\
 C:\Users\Laptop\Desktop\Materiały\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.csproj.CoreCompileInputs.cache
 C:\Users\Laptop\Desktop\Materiały\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.exe
 C:\Users\Laptop\Desktop\Materiały\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.pdb
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\bin\Debug\kalkulator-c#.exe.config
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\bin\Debug\kalkulator-c#.exe
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\bin\Debug\kalkulator-c#.pdb
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.csproj.AssemblyReference.cache
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator_c_.Form1.resources
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator_c_.Properties.Resources.resources
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.csproj.GenerateResource.cache
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.csproj.CoreCompileInputs.cache
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.exe
+C:\Users\Programista\Desktop\3CT\prog-apk-arek\c#\kalkulator-c#\kalkulator-c#\obj\Debug\kalkulator-c#.pdb

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+    </p>
+     <button>przycisk</button>
+     <input type="text">
+    
+
+    <select name="zmk" id="">
+        <option value="1">jeden</option>
+        <option value="2">dwa</option>
+        <option value="3">trzy</option>
+    </select>
+
+
+    <form action="wyslij.php" method="post">
+<input type="text" name="imie">
+<input type="text" name="nazwisko">
+<input type="submit" value="Tu kliknac chopie">
+    </form>
+
+
+
+         <script>
+
+            const formularz = document.querySelector("form");
+
+            formularz.addEventListener("submit", function(e){
+                e.preventDefault();
+                let wynik = document.getElementById("wynik")
+                let data = new FormData(e.target)
+                wynik.innerHTML = `
+                <p>Formularz wysłany z wartosciami: </p><br>
+                ${data}
+                
+                `
+            })
+
+            function This(ts){
+                console.log(ts)
+            }
+            This("icl fr ts pmo")
+
+            //{
+            //    (function(){return"lubia 3ct jak sluchaja a nie gadaja miziaka sie na lekcji czy mruza oczy"})
+            //}
+//
+//
+//
+            //function name1(){
+            //    alert("Przebacz mi sigmo");
+            //}
+            //function name2(){
+            //    alert("Przebacz mi toilecie");
+            //}
+            //function name3(){
+            //    alert("Przebacz mi nyga");
+            //}
+//
+
+
+        document.querySelector("select").addEventListener("change",function(e){
+            //console.log("Klawisz to: ",e.key);
+            //console.log("Klawisz to: ",e.code);
+           // console.log("Klawisz to: ",e.mouse);
+           // console.log("Klawisz to: ",e.clientX,e.clientY);
+            //console.log("ruch myszy: ",e.clientX,e.clientY);
+            //console.log("sigma: ", window.scrollY);
+            //console.log("Nowa wartosc: " ,e.target.value)
+            //let changeValue = e.target.value;
+            //switch(changeValue){
+            //    case "1":
+            //        console.log("jeden chopie")
+            //        name1()
+            //        break;
+            //    case "2":
+            //        console.log("dwa chopie")
+            //        name2()
+            //        break;
+            //    case "3":
+            //        console.log("tri chopie")
+            //        name3()
+            //        break;
+            //}
+        
+        });
+     </script>
+</body>
+</html>
