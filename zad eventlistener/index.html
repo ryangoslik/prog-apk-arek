@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventlistenerownia</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .book-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .book { width: 150px; padding: 10px; border: 1px solid #ddd; }
+        .book img { width: 100%; height: auto; }
+        button { margin-top: 10px; padding: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>addeventlistenerownia</h1>
+    <div class="book-container" id="books"></div>
+    
+    <script>
+        const books = Array.from({ length: 25 }, (_, i) => ({
+            title: `Książka ${i + 1}`,
+            img: "https://picsum.photos/200/300"
+        }));
+
+        const events = [
+            (btn) => btn.addEventListener("click", () => { btn.style.backgroundColor = "blue"; }),
+            (btn) => btn.addEventListener("click", () => { alert("kliknieto w ksiazke"); }),
+            (btn) => btn.addEventListener("click", () => { btn.style.fontSize = "20px"; }),
+            (btn) => btn.addEventListener("mouseover", () => { btn.style.transform = "rotate(10deg)"; }),
+            (btn) => btn.addEventListener("mouseout", () => { btn.style.opacity = "0.5"; }),
+            (btn) => btn.addEventListener("click", () => { btn.innerText = "dodano do ulubionych"; }),
+            (btn) => btn.addEventListener("contextmenu", (e) => { e.preventDefault(); alert("prawy klik" ); }),
+            (btn) => btn.addEventListener("mousedown", () => { btn.style.border = "2px solid red"; }),
+            (btn) => btn.addEventListener("mouseup", () => { btn.style.border = "2px solid green"; }),
+            (btn) => btn.addEventListener("mouseenter", () => { btn.style.backgroundColor = "yellow"; }),
+            (btn) => btn.addEventListener("mouseleave", () => { btn.style.backgroundColor = "white"; }),
+            (btn) => btn.addEventListener("click", function(e){
+                console.log("Koordynaty klikniecia: ", e.clientX, e.clientY)
+            }),
+            (btn) => btn.addEventListener("keydown", function(e){
+                console.log("nacisniety klawisz: ", e.key)
+            }),
+            (btn) => btn.addEventListener("keydown", function(e){
+                console.log("kod nacisnietego klawisza: ", e.code)
+            }),
+            (btn) => btn.addEventListener("mousemove", function(e){
+                console.log("Mysz na pozycji: ", e.clientX, e.clientY)
+            }),
+            (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.transform = "rotate(180deg)"; }),
+            (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.backgroundColor = "RED"; }),
+            (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.fontSize = "5px"; }),
+            (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.fontSize = "50px"; }),
+            (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.color = "RED"; }),
+            (btn) => btn.addEventListener("mouseout", function(e){
+                console.log("wyjechales myszka ")
+            }),
+            (btn) => btn.addEventListener("mouseover", function(e){
+                console.log("najechaless myszka ")
+            }),
+            (btn,bookElement) => btn.addEventListener("mouseover", () => { bookElement.style.transform = "rotate(10deg)"; }),
+            (btn) => btn.addEventListener("mouseover", () => { btn.style.border = "blue 2px dotted"; }),
+            (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.padding = "100px"; }),
+        ];
+
+        const booksContainer = document.getElementById("books");
+        books.forEach((book, index) => {
+            const bookElement = document.createElement("div");
+            bookElement.classList.add("book");
+            bookElement.innerHTML = `<img src="${book.img}" alt="${book.title}"><br>${book.title}<br><button id="btn${index}">Wypożycz</button>`;
+            booksContainer.appendChild(bookElement);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            books.forEach((_, index) => {
+                const button = document.getElementById(`btn${index}`);
+                const bookElement = button.parentElement;
+                const assignedEvent = events[index % events.length];
+                assignedEvent(button, bookElement);
+            });
+        });
+    </script>
+</body>
+</html>
