@@ -22,6 +22,25 @@
             img: "https://picsum.photos/200/300"
         }));
 
+
+        const booksContainer = document.getElementById("books");
+        books.forEach((book, index) => {
+            const bookElement = document.createElement("div");
+            bookElement.classList.add("book");
+            bookElement.innerHTML = `<img src="${book.img}" alt="${book.title}"><br>${book.title}<br><button id="btn${index}">Wypożycz</button>`;
+            booksContainer.appendChild(bookElement);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            books.forEach((_, index) => {
+                const button = document.getElementById(`btn${index}`);
+                const bookElement = button.parentElement;
+                const assignedEvent = events[index % events.length];
+                assignedEvent(button, bookElement);
+            });
+        });
+
+
         const events = [
             (btn) => btn.addEventListener("click", () => { btn.style.backgroundColor = "blue"; }),
             (btn) => btn.addEventListener("click", () => { alert("kliknieto w ksiazke"); }),
@@ -62,22 +81,7 @@
             (btn,bookElement) => btn.addEventListener("click", () => { bookElement.style.padding = "100px"; }),
         ];
 
-        const booksContainer = document.getElementById("books");
-        books.forEach((book, index) => {
-            const bookElement = document.createElement("div");
-            bookElement.classList.add("book");
-            bookElement.innerHTML = `<img src="${book.img}" alt="${book.title}"><br>${book.title}<br><button id="btn${index}">Wypożycz</button>`;
-            booksContainer.appendChild(bookElement);
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            books.forEach((_, index) => {
-                const button = document.getElementById(`btn${index}`);
-                const bookElement = button.parentElement;
-                const assignedEvent = events[index % events.length];
-                assignedEvent(button, bookElement);
-            });
-        });
+        
     </script>
 </body>
 </html>

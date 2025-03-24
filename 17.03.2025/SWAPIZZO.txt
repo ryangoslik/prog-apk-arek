@@ -1,0 +1,1 @@
+Temat: Wprowadzenie do projektowania oraz instalacji framework - DJANGO

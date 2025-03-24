@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: black;
+            color: rgb(224, 3, 3);
+        }
+        div{
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>par1</p>
+        <p>par2</p>
+        <p>par3</p>
+    </div>
+    
+    <script>
+        var ps = document.querySelectorAll("#div1 p");
+    
+        ps.forEach((p, index) => {
+            if (index === 0) {
+                p.addEventListener("mouseover", function () {
+                    let r = prompt("Podaj r: ");
+                    let obl = 3.14 * Math.pow(r,2);
+                    this.textContent = " (A = π r²)" + obl;
+                });
+            } else if (index === 1) {
+                p.addEventListener("click", function () {
+                    let name = prompt("Podaj swoje imię:");
+                    if (name) {
+                        this.textContent = "Witaj, " + name + "!";
+                    }
+                });
+            } else if (index === 2) {
+                p.addEventListener("mouseover", function () {
+                    document.body.style.backgroundColor = "rgb(224, 3, 3)";
+                    document.body.style.color = "black";
+                });
+    
+                p.addEventListener("mouseleave", function () {
+                    this.style.backgroundColor = "";
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
