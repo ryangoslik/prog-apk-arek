@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+<aside><h1>Menu</h1>
+<ul>
+<li id="pic1">Foto 1</li>
+<li id="pic2">Foto 2</li>
+<li id="pic3">Foto 3</li>
+<li id="picall">Galeria</li>
+</ul>
+</aside>
+
+<section class="srodek">
+    <p class="jfk">wina michala</p>
+    <div class="maindiv">
+        <div class="jakisdiv">
+           <img src="https://picsum.photos/400/400" width="400px" height="400px" class="zdj1">
+           <input class="a" type="range" min="0" max="100">
+       </div>
+       <div class="jakisdiv">
+           <img src="https://picsum.photos/200/400" width="400px" height="400px" class="zdj2">
+           <input class="b" type="range" min="0" max="100">
+       </div>
+       <div class="jakisdiv">
+           <img src="https://picsum.photos/300/400" width="400px" height="400px" class="zdj3">
+           <input class="c" type="range" min="0" max="100">
+       </div>
+   </div>
+    <div class="jakisdiv" id="foto1">
+        <img src="https://picsum.photos/400/400" width="400px" height="400px" class="zdj1">
+        <input class="a" type="range" min="0" max="100">
+    </div>
+    <div class="jakisdiv" id="foto2">
+        <img src="https://picsum.photos/200/400" width="400px" height="400px" class="zdj2">
+        <input class="b" type="range" min="0" max="100">
+    </div>
+    <div class="jakisdiv" id="foto3">
+        <img src="https://picsum.photos/300/400" width="400px" height="400px" class="zdj3">
+        <input class="c" type="range" min="0" max="100">
+    </div>
+</section>
+
+    </main>
+
+<footer>jakies stupki</footer>
+
+
+    <script>
+        document.getElementById("pic1").addEventListener("click", function(){
+            document.getElementById("foto1").style.display = "flex";
+            document.getElementById("foto2").style.display = "none";
+            document.getElementById("foto3").style.display = "none";
+            document.getElementsByClassName("maindiv")[0].style.display = "none";
+        });
+        document.getElementById("pic2").addEventListener("click", function(){
+            document.getElementById("foto1").style.display = "none";
+            document.getElementById("foto2").style.display = "flex";
+            document.getElementById("foto3").style.display = "none";
+            document.getElementsByClassName("maindiv")[0].style.display = "none";
+        });
+        document.getElementById("pic3").addEventListener("click", function(){
+            document.getElementById("foto1").style.display = "none";
+            document.getElementById("foto2").style.display = "none";
+            document.getElementById("foto3").style.display = "flex";
+            document.getElementsByClassName("maindiv")[0].style.display = "none";
+        });
+        document.getElementById("picall").addEventListener("click", function(){
+            document.getElementById("foto1").style.display = "none";
+            document.getElementById("foto2").style.display = "none";
+            document.getElementById("foto3").style.display = "none";
+            document.getElementsByClassName("maindiv")[0].style.display = "flex";
+        });
+
+        document.getElementsByClassName("a")[0].addEventListener("input", function () {
+            let wartosc = document.getElementsByClassName("a")[0].value;
+            console.log(wartosc);
+            document.getElementsByClassName("zdj1")[0].style.filter = "brightness(" + wartosc + "%)";
+        });
+        document.getElementsByClassName("a")[1].addEventListener("input", function () {
+            let wartosc = document.getElementsByClassName("a")[1].value;
+            console.log(wartosc);
+            document.getElementsByClassName("zdj1")[1].style.filter = "brightness(" + wartosc + "%)";
+        });
+
+        document.getElementsByClassName("b")[0].addEventListener("input", function () {
+            let wartosc = document.getElementsByClassName("b")[0].value;
+            console.log(wartosc);
+            document.getElementsByClassName("zdj2")[0].style.filter = "opacity(" + wartosc + "%)";
+        });
+        document.getElementsByClassName("b")[1].addEventListener("input", function () {
+            let wartosc = document.getElementsByClassName("b")[1].value;
+            console.log(wartosc);
+            document.getElementsByClassName("zdj2")[1].style.filter = "opacity(" + wartosc + "%)";
+        });
+
+        document.getElementsByClassName("c")[0].addEventListener("input", function () {
+            let wartosc = document.getElementsByClassName("c")[0].value;
+            console.log(wartosc);
+            document.getElementsByClassName("zdj3")[0].style.filter = "invert(" + wartosc + "%)";
+        });
+        document.getElementsByClassName("c")[1].addEventListener("input", function () {
+            let wartosc = document.getElementsByClassName("c")[1].value;
+            console.log(wartosc);
+            document.getElementsByClassName("zdj3")[1].style.filter = "invert(" + wartosc + "%)";
+        });
+    </script>
+</body>
+</html>

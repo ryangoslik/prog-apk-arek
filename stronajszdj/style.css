@@ -1,0 +1,60 @@
+html,body{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    width: 100vw;
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+aside{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10vw;
+}
+aside ul{
+    list-style: none;
+}
+.jfl{
+    text-align: center;
+}
+
+.jakisdiv{
+    justify-content: center;
+    flex-direction: column;
+}
+#foto1{
+    display: none;
+}
+#foto2{
+    display: none;
+}
+#foto3{
+    display: none;
+}
+.srodek{
+    width:90vw;
+    display: block;
+}
+input{
+    width: 25vw;
+}
+footer{
+    display: block;
+    margin-top: 68vh;
+    height: 5vh;
+    background-color: gainsboro;
+    text-align: center;
+    width: 100%;
+}
+.maindiv {
+    display: none;
+}
