@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 11 trojkat</title>
+</head>
+<body>
+  <script>
+    function trojkatPoleObwod(a, b, c) {
+        if (a + b <= c || a + c <= b || b + c <= a) {
+        return "trojkat nie  istnieje";
+      }
+      const obwod = a + b + c;
+      const p = obwod / 2; 
+      const pole = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+      return {
+        obwod: obwod,
+        pole: pole
+      };
+    }
+    const wynik = trojkatPoleObwod(3, 4, 5);
+    console.log("obwod:", wynik.obwod);
+    console.log("pole:", wynik.pole);
+  </script>
+</body>
+</html>

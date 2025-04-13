@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 13 odleglosc miedzy punktami</title>
+</head>
+    <body>
+    <script>
+        function odleglosc(p1, p2) {
+        const dx = p2[0] - p1[0];
+        const dy = p2[1] - p1[1];
+        return Math.sqrt(dx * dx + dy * dy);
+        }
+        const A = [1, 2];
+        const B = [4, 6];
+        console.log("odleglosc miedzy punktami a i b :", odleglosc(A, B));
+    </script>
+    </body>
+</html>

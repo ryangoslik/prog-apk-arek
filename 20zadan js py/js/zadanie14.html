@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 14 stopnie i radiany</title>
+</head>
+<body>
+  <script>
+        function stopnieNaRadiany(stopnie) {
+        return stopnie * (Math.PI / 180);
+        }
+        function radianyNaStopnie(radiany) {
+        return radiany * (180 / Math.PI);
+        }
+        const stopnie = 180;
+        const radiany = Math.PI;
+        console.log(`${stopnie} to ${stopnieNaRadiany(stopnie)} rad`);
+        console.log(`${radiany} rad to ${radianyNaStopnie(radiany)}`);
+  </script>
+</body>
+</html>
