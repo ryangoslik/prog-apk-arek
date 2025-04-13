@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Jacquard+12&family=Jacquard+24&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto:wght@100;300&family=Special+Gothic+Expanded+One&family=Uncial+Antiqua&family=Workbench&display=swap');
+html,body{
+padding: 0;
+box-sizing: 0;
+margin: 0;
+}
+header{
+    font-family: Bebas Neue;
+    text-align: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    font-size: 2.25rem;
+    margin-bottom: -1%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: xx-large;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 2.2rem;
+}
+.box {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.heading {
+    flex: 1;
+    text-align: center;
+}
+.filter-form {
+    flex: 1;
+    text-align: center;
+}
+.filter-form form {
+    margin-top: -5%;
+    display: inline-block;
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+form p{
+    margin: 0;
+}
+.heading h2{
+    letter-spacing: 10px;
+    font-weight: 100;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin: 40px;
+    align-items: start;
+}
+li {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 15px;
+    transition: 0.3s;
+}
+li p{
+    font-family: Bebas Neue;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-align: left;
+}
+li:hover{
+    box-shadow: 0px 0px 10px 5px rgb(227, 227, 227);
+}
+img{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
