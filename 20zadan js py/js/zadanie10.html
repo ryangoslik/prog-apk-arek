@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 10 liczba armstronga</title>
+</head>
+    <body>
+    <script>
+        function czyArmstrong(n) {
+        const cyfry = n.toString().split('');
+        const suma = cyfry.reduce((acc, cyfra) => acc + Math.pow(Number(cyfra), cyfry.length), 0);
+        return suma === n;
+        }
+        console.log("czy 12 to liczba Armstronga?", czyArmstrong(12));
+        console.log("czy 1231234 to liczba Armstronga?", czyArmstrong(1231234)); 
+
+    </script>
+
+    </body>
+</html>

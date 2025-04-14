@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 8 rownanie kwadratowe</title>
+</head>
+<body>
+  <script>
+    function rozwiazRownanieKwadratowe(a, b, c) {
+      const delta = b * b - 4 * a * c;
+      if (delta < 0) {
+        return "brak pierwiastkow rzeczywistych";
+      }
+      if (delta === 0) {
+        const x = -b / (2 * a);
+        return `jeden pierwiastek: x = ${x}`;
+      }
+      const x1 = (-b - Math.sqrt(delta)) / (2 * a);
+      const x2 = (-b + Math.sqrt(delta)) / (2 * a);
+      return `dwa pierwiastki: x1 = ${x1}, x2 = ${x2}`;
+    }
+    console.log(rozwiazRownanieKwadratowe(1, -3, 2));
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 9 suma ciagu geometrycznego</title>
+</head>
+    <body>
+    <script>
+        function sumaCiaguGeometrycznego(a, r, n) {
+        if (r === 1) {
+            return a * n;
+        } else {
+            return a * (1 - Math.pow(r, n)) / (1 - r);
+        }
+        }
+        console.log("suma ciągu geometrycznego :", sumaCiaguGeometrycznego(2, 3, 4));
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 15 wspolliniowosc punktow</title>
+</head>
+    <body>
+    <script>
+        function czyNaProstej(p1, p2, p3) {
+        const wyznacznik = (p2[0] - p1[0]) * (p3[1] - p1[1]) - (p3[0] - p1[0]) * (p2[1] - p1[1]);
+        return wyznacznik === 0;
+        }
+        const A = [0, 0];
+        const B = [1, 1];
+        const C = [2, 2];
+        console.log("czy a b c są wspolliniowe?", czyNaProstej(A, B, C)); 
+        const D = [2, 3];
+        console.log("czy a b d sa wspolliniowe?", czyNaProstej(A, B, D)); 
+    </script>
+
+    </body>
+</html>
