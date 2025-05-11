@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="1s.css">
+</head>
+<body>
+    <div class="container">
+    <aside><h3>Chaty</h3>
+        <ul>
+        <li>Ogólny</li>
+        <li>Tematyczne</li><ol>
+        <li>Turystyczny</li>
+        <li>Żeglarski</li>
+        <li>Filatelistyczny</li>
+        <li>Hodowla zwierzątek
+            domowych</li>
+        </ol>
+        </ul>
+        <h3>Uczestnicy</h3>
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="Jolanta Nowak" srcset="">
+        <p>Krzysztof Łukasiński</p>
+        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński" srcset="">
+        </aside>
+    <nav class="baner"><h2>Chat</h2></nav>
+    <main>
+        <div class="chat">
+        <div class="box1"><img src="Jolka.jpg" alt=""><p>Cześć idziesz jutro do
+            kina?</p></div>
+        <div class="box2"><img src="Krzysiek.jpg" alt="" srcset=""><p>Tak! A ty?</p></div>
+        </div>
+        <label for="wiadomosc">Wpisz wiadomość:</label>
+        <input type="text" id="wiadomosc" name="wiadomosc">
+        <button onclick="sendM()">Wyślij</button><br>
+        <button onclick="randomM()">Generuj losową odpowiedź</button>
+    </main>
+
+    <footer>Chat wykonał: ja</footer></div>
+    <script>
+const odp = ["Świetnie!",
+"Kto gra główną rolę?",
+"Lubisz filmy Tego reżysera?",
+"Będę 10 minut wcześniej",
+"Może kupimy sobie popcorn?",
+"Ja wolę Colę",
+"Zaproszę jeszcze Grześka",
+"Tydzień temu też byłem w kinie na Diunie",
+"Ja funduję bilety"];
+
+        function sendM(){
+const wiad = document.getElementById("wiadomosc");
+const tresc = wiad.value;
+
+const chat = document.querySelector(".chat");
+
+const nowyBlok = document.createElement("div");
+nowyBlok.className = "box1";
+
+const obraz = document.createElement("img");
+    obraz.src = "Jolka.jpg";
+    obraz.alt = "Jolanta";
+    obraz.width = 70;
+    obraz.height = 70;
+
+    const paragraf = document.createElement("p");
+    paragraf.textContent = tresc;
+
+    nowyBlok.appendChild(obraz);
+    nowyBlok.appendChild(paragraf);
+
+    chat.appendChild(nowyBlok);
+    
+
+    chat.scrollTop = chat.scrollHeight;
+    wiad.value = "";
+}
+
+        function randomM(){
+const chat = document.querySelector(".chat");
+
+const losowyIndex = Math.floor(Math.random() * odp.length);
+const tresc = odp[losowyIndex];
+
+const nowyBlok = document.createElement("div");
+nowyBlok.className = "box2";
+
+const obraz = document.createElement("img");
+obraz.src = "Krzysiek.jpg";
+obraz.alt = "Krzysztof";
+obraz.width = 70;
+obraz.height = 70;
+
+const paragraf = document.createElement("p");
+paragraf.textContent = tresc;
+
+nowyBlok.appendChild(obraz);
+nowyBlok.appendChild(paragraf);
+
+chat.appendChild(nowyBlok);
+
+chat.scrollTop = chat.scrollHeight;
+}
+    </script>
+</body>
+</html>
